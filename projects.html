@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="images/home.png" alt="Home Icon" class="nav-icon">Home</a></li>
+        <li><a href="services.html"><img src="images/public-service.png" alt="Service Icon" class="nav-icon">Services</a></li>
+        <li><a href="projects.html"><img src="images/execute.png" alt="Project Icon" class="nav-icon">Projects</a></li>
+        <li><a href="contact.html"><img src="images/mail.png" alt="Contact Icon" class="nav-icon">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="projects">
+    <h2>Our Projects</h2>
+  
+    <!-- Project 1-->
+    <div class="project-card left">
+      <img src="images\-2024-01-25-191008-1024x537.jpg" alt="Project 1">
+      <div class="content">
+        <h3>E-Commerce Platform</h3>
+        <p>We developed a fully responsive e-commerce platform for a retail client, enabling them to sell products online.</p>
+        <a href="#" class="learn-more" data-modal="modal1">Learn More</a>
+      </div>
+    </div>
+  
+    <!-- Project 2-->
+    <div class="project-card right">
+      <img src="images\opentext-image-blog-brightcloud-1200x675-en-1024x576.webp" alt="Project 2">
+      <div class="content">
+        <h3>Threat Detection System</h3>
+        <p>We designed and implemented a threat detection system for a financial institution to protect their sensitive data.</p>
+        <a href="#" class="learn-more" data-modal="modal2">Learn More</a>
+      </div>
+    </div>
+  
+    <!-- Project 3: -->
+    <div class="project-card left">
+      <img src="images\istockphoto-1156739344-612x612.jpg" alt="Project 3">
+      <div class="content">
+        <h3>Fitness Tracker App</h3>
+        <p>We created a cross-platform mobile app for a fitness startup to help users track their workouts and set goals.</p>
+        <a href="#" class="learn-more" data-modal="modal3">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Popups -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>E-Commerce Platform</h3>
+      <p><strong>Client:</strong> Retail Company</p>
+      <p><strong>Description:</strong> We developed a fully responsive e-commerce platform for a retail client, enabling them to sell products online. The platform features a user-friendly interface, secure payment gateways, and an admin dashboard for managing inventory, orders, and customer data.</p>
+      <p><strong>Technologies Used:</strong> React.js, Node.js, MongoDB</p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Threat Detection System</h3>
+      <p><strong>Client:</strong> Financial Institution</p>
+      <p><strong>Description:</strong> We designed and implemented a threat detection system for a financial institution to protect their sensitive data from cyberattacks. The system uses machine learning algorithms to detect and mitigate potential threats in real-time.</p>
+      <p><strong>Technologies Used:</strong> Python, TensorFlow, AWS</p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Fitness Tracker App</h3>
+      <p><strong>Client:</strong> Fitness Startup</p>
+      <p><strong>Description:</strong> We created a cross-platform mobile app for a fitness startup to help users track their workouts, set goals, and monitor progress. The app includes features like step counting, calorie tracking, and personalized workout plans.</p>
+      <p><strong>Technologies Used:</strong> React Native, Firebase</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Software Agency. All rights reserved.</p>
+    <div class="contact-info">
+        <p>
+            <i class="fas fa-phone"></i> +92 XX-XXXXX
+        </p>
+        <p>
+            <i class="fas fa-map-marker-alt"></i> Pakistan
+        </p>
+        <p>
+            <i class="fas fa-envelope"></i> softwarecompany@gmail.com
+        </p>
+    </div>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href='#'><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #11120D; /* Smoky Black */
+    background-color: #FFFBF4; /* Floral White */
+  }
+  
+  /* Header & Navigation */
+  header {
+    background: #DBCFBC;
+    color:  #11120D;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+  }
+  
+  nav ul li a {
+    color: #11120D; /* Smoky Black */
+    text-decoration: none;
+    font-weight: bold;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center the icon and text */
+  }
+  
+  .nav-icon {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    margin-right: 3px; /* Space between icon and text */
+  }
+
+/* About Section */
+.about-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #DBCFBC;
+    font-family: 'Arial', sans-serif;
+    
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+    color: #11120D; /* Smoky Black */
+    margin-bottom: 1rem;
+  }
+  
+  .about-section p {
+    font-size: 1.2rem;
+    color: #565449; /* OliveDrab */
+    margin-bottom: 2rem;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .feature-box {
+    flex: 1;
+    padding: 1rem;
+    background-color: #e2d7c6; /* Bone */
+    border: 1px solid #11120D; /* black*/
+    border-radius: 10px;
+    text-align: center;
+  }
+  .feature-box i {
+    font-size: 2rem;
+    color: #11120D; /* Smoky Black */
+    margin-bottom: 1rem;
+  }
+  
+  .feature-box h3 {
+    font-size: 1.5rem;
+    color: #11120D; /* Smoky Black */
+    margin-bottom: 1rem;
+  }
+  
+  .feature-box p {
+    font-size: 1rem;
+    color: #565449; /* OliveDrab */
+  }
+  
+  /* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
+    background-color: #DBCFBC; /* Bone */
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #11120D; /* Smoky Black */
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #565449; /* OliveDrab */
+    margin-bottom: 2rem;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #565449; /* OliveDrab */
+    color: #FFFBF4; /* Floral White */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #11120D; /* Smoky Black */
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-content {
+      max-width: 100%;
+    }
+  
+    .hero-image {
+      margin-top: 2rem;
+    }
+  }
+  
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer .contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adds space between contact items */
+  flex-wrap: wrap; /* Ensures items wrap to the next line on smaller screens */
+  margin-bottom: 10px; /* Adds space below the contact info */
+}
+
+footer .contact-info p {
+  margin: 0; /* Removes default margin for <p> tags */
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adds space between icon and text */
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .service-card, .project-card {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+   
+   
+    }
+  }
+    /* Social Icons */
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ff6f61;
+  }
+  
+  /* Testimonial Slider */
+  .testimonial-slider {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .testimonial-slider .slides {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-slider .slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .testimonial-slider .slide p {
+    font-style: italic;
+  }
+  
+  .testimonial-slider .slide h3 {
+    margin-top: 10px;
+  }
